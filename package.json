@@ -7,14 +7,24 @@
     "grunt-cli": "^1.2.0"
   },
   "devDependencies": {
-    "grunt" : "~0.4.5",
+    "bootstrap": "^3.3.7",
+    "copy-webpack-plugin": "^4.0.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "grunt": "~0.4.5",
     "grunt-contrib-jshint": "~0.10.0",
-    "grunt-contrib-uglify" : "~0.5.0",
     "grunt-contrib-less": "~1.4.0",
-    "grunt-contrib-watch": "~1.0.0"
+    "grunt-contrib-uglify": "~0.5.0",
+    "grunt-contrib-watch": "~1.0.0",
+    "less": "2.7.1",
+    "less-loader": "2.2.3",
+    "style-loader": "^0.13.1",
+    "webpack": "1.13.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js"
   },
   "author": "Gustavo del Pino",
   "license": "ISC"

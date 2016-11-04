@@ -1,6 +1,11 @@
 /*---------------------------------------------
 Load Google Fonts
 ---------------------------------------------*/
+
+/* Shadows Into Light */
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+@import url(https://fonts.googleapis.com/css?family=Proza+Libre);
 /* Lato */
 @font-face {
     font-family: 'Lato';
@@ -35,44 +40,55 @@ Load Google Fonts
     src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://fonts.gstatic.com/s/pacifico/v7/yunJt0R8tCvMyj_V4xSjafesZW2xOQ-xsNqO47m55DA.woff) format('woff');
 }
 
+
+/* Shadows Into Light Two*/
+/*@font-face {*/
+    /*font-family: 'Shadows Into Light Two';*/
+    /*font-style: normal;*/
+    /*font-weight: 400;*/
+    /*src: local('Shadows Into Light Two'), local('Shadows-Into-Light-Two'), url(https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two);*/
+
+/*}*/
+
+
 /*---------------------------------------------
 SVG for smoother text in Chrome-Windows
 ---------------------------------------------*/
 /* Lato */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'Lato';
-        src: url('../fonts/Lato.svg') format('svg');
-        font-weight: 400;
-    }
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'Lato';
-        src: url('../fonts/Lato-Bold.svg') format('svg');
-        font-weight: 700;
-    }
-}
-/* PT Sans */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'PT Sans';
-        src: url('../fonts/PTSans-Regular.svg') format('svg');
-        font-weight: 400;
-    }
-}
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'PT Sans';
-        src: url('../fonts/PTSans-Bold.svg') format('svg');
-        font-weight: 700;
-    }
-}
-/* Pacifico */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'Pacifico';
-        src: url('../fonts/Pacifico.svg') format('svg');
-        font-weight: 400;
-    }
-}
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'Lato';*/
+        /*src: url('../fonts/Lato.svg') format('svg');*/
+        /*font-weight: 400;*/
+    /*}*/
+/*}*/
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'Lato';*/
+        /*src: url('../fonts/Lato-Bold.svg') format('svg');*/
+        /*font-weight: 700;*/
+    /*}*/
+/*}*/
+/*!* PT Sans *!*/
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'PT Sans';*/
+        /*src: url('../fonts/PTSans-Regular.svg') format('svg');*/
+        /*font-weight: 400;*/
+    /*}*/
+/*}*/
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'PT Sans';*/
+        /*src: url('../fonts/PTSans-Bold.svg') format('svg');*/
+        /*font-weight: 700;*/
+    /*}*/
+/*}*/
+/*!* Pacifico *!*/
+/*@media screen and (-webkit-min-device-pixel-ratio:0) {*/
+    /*@font-face {*/
+        /*font-family: 'Pacifico';*/
+        /*src: url('../fonts/Pacifico.svg') format('svg');*/
+        /*font-weight: 400;*/
+    /*}*/
+/*}*/

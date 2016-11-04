@@ -3,11 +3,11 @@ Enrypo Cheat Sheet
 ---------------------------------------------*/
 @font-face {
     font-family: 'entypo';
-    src: url('../fonts/entypo.eot?49384070');
-    src: url('../fonts/entypo.eot?49384070#iefix') format('embedded-opentype'),
-    url('../fonts/entypo.woff?49384070') format('woff'),
-    url('../fonts/entypo.ttf?49384070') format('truetype'),
-    url('../fonts/entypo.svg?49384070#entypo') format('svg');
+    /*src: url('../fonts/entypo.eot?49384070');*/
+    /*src: url('../fonts/entypo.eot?49384070#iefix') format('embedded-opentype');*/
+    src: url('../fonts/entypo.woff?49384070') format('woff');
+    /*url('../fonts/entypo.ttf?49384070') format('truetype'),*/
+    /*url('../fonts/entypo.svg?49384070#entypo') format('svg');*/
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,8 @@ Enrypo Cheat Sheet
 @media screen and (-webkit-min-device-pixel-ratio:0) {
     @font-face {
         font-family: 'entypo';
-        src: url('../fonts/entypo.svg?49384070#entypo') format('svg');
+        /*src: url('../fonts/entypo.svg?49384070#entypo') format('svg');*/
+        src: url('../fonts/entypo.woff?49384070') format('woff');
     }
 }
 

@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo del Pino</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <!-- CSS file for StyleSwitcher -->
-    <link id="link" rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <!-- CSS by Grunt -->
+    <!--<link id="link" rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">-->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -43,14 +41,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Gustavo del Pino</a>
+            <a class="navbar-brand" href="index.html">Gustavo <span class="colored">del Pino</span></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right" role="tablist">
                 <li class="active"><a class="scrollTo" href="#home">Home</a></li>
-                <li><a class="scrollTo" href="#biography">Biography</a></li>
-                <li><a class="scrollTo" href="#discography">Discography</a></li>
                 <li><a class="scrollTo" href="#portfolio">Portfolio</a></li>
+                <li><a class="scrollTo" href="#discography">Discography</a></li>
+                <li><a class="scrollTo" href="#biography">Biography</a></li>
                 <li><a class="scrollTo" href="#contact">Contact</a></li>
             </ul>
         </div><!--/.nav-collapse -->
@@ -62,77 +60,64 @@
     <div class="container">
         <h1>Gustavo del Pino</h1>
         <span class="line"></span>
-        <p>Pianist, keyboardist, arranger, and session player.</p>
+        <p>Pianist, keyboardist, arranger, and session player</p>
         <!--<a class="link" href="#">Purchase Now</a> <br>-->
         <a class="scrollTo" href="#biography"><i class="icon-down-open-big"></i></a>
     </div>
 </div>
 
-<!-- Biography -->
-<div id="biography" class="skew-pos biography">
+<!-- Portfolio -->
+<div id="portfolio" class="skew-pos portfolio">
     <div class="skew-arrow left"></div>
     <div class="container skew-neg">
         <div class="row">
             <div class="col-sm-12 category-title">
-                <h1>BIOGRAPHY</h1>
+                <h1>PORTFOLIO</h1>
                 <div class="under-line">
                     <span class="line"></span>
                 </div>
-                <!--<p>Our Passion leads to design, design leads to performance, performance leads to success. We believe that apps and websites should not only be eyecatching but actually provide a great user experience that users will remember.</p>-->
+                <!--<p>Our Passion leads to design, design leads to performance, performance lead</p>-->
             </div>
-            <div class="col-sm-12 col-md-5 col-lg-6 carousel">
-                <div id="slider-2" class="carousel slide simple-slider" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="assets/img/biography/trc_leah.jpg" alt="slide">
-                        </div>
-                        <div class="item">
-                            <img src="assets/img/biography/wgbh_radio.jpg" alt="slide">
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#slider-2" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </a>
-                    <a class="right carousel-control" href="#slider-2" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-sm-12 col-md-7 col-lg-6 content">
-                <h4>Who am I?</h4>
-                <p>Working on biography</p>
+            <!-- Portfolio elements -->
+            <div class="col-sm-12 portfolio-elem">
 
-                <p>Here I will also list the hardware and virtual instruments I currently own</p>
-
-                <ul class="list">
-                    <li>
-                        <i class="icon-check"></i>
-                        <span>Roland RD700GX stage piano.</span>
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        <span>Logic Pro and ProTools 10/11</span>
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        <span>Addictive Keys (Piano/Rhodes)</span>
+                <ul>
+                    <li class="audio">
+                        <iframe id="sc-widget"
+                                src="https://w.soundcloud.com/player/?url=https://soundcloud.com/gustavo-del-pino/sets/portfolio&amp;sharing=false&amp;show_user=false&amp;show_playcount=false&amp;color=72e4ec&amp;theme_color=00000"
+                                width="100%" height="465" scrolling="no" frameborder="no"></iframe>
                     </li>
 
-                    <li>
-                        <i class="icon-check"></i>
-                        <span>Grandeur Piano from Kontakt</span>
-                    </li>
-                    <li>
-                        <i class="icon-check"></i>
-                        <span>PreSonus AudioBox 22VSL Audio Interface</span>
-                    </li>
+                    <li class="video">Youtube Link 1</li>
+                    <li class="video">Youtube Link 2</li>
+                    <li class="video">Youtube Link 3</li>
                 </ul>
+
+
+                <!--<ul>-->
+                <!--<li>-->
+                <!--<div class="wrapper-portfolio">-->
+                <!--<iframe width="100%" height="120" scrolling="no" frameborder="no"-->
+                <!--src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249486539&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">-->
+                <!--</iframe>-->
+                <!--</div>-->
+
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="wrapper-portfolio">-->
+                <!--<img src="assets/img/blog/home-1.jpg" alt="" class="img-responsive">-->
+                <!--<a class="hover" href="blog-single.html">-->
+                <!--<span class="category">MUSIC</span>-->
+                <!--<span class="line-h"></span>-->
+                <!--<h3>New album coming soon on 5 november</h3>-->
+                <!--<p>The post format will feature the first in the post.</p>-->
+                <!--</a>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
             </div>
         </div>
     </div>
-    <div class="skew-arrow right"></div>
 </div>
 
 <!-- Discography -->
@@ -184,6 +169,22 @@
                     </li>
                     <li>
                         <div class="wrapper-cover">
+                            <img src="assets/img/albums/haowei_asongabridge.jpg" alt="" class="img-responsive">
+                            <div class="hover">
+                                <a class="buy" href="https://itunes.apple.com/us/album/a-song-a-bridge/id1129168172" target="_blank">
+                                    <i class="flaticon-apple"></i>
+                                    <span>Buy on iTunes</span>
+                                </a>
+                                <a href="https://www.amazon.com/Song-Bridge-Peng-Hao-Wei/dp/B01HQ6X584" target="_blank" class="info">
+                                    <h5>A Song A Bridge</h5>
+                                    <p>Hao Wei</p>
+                                    <p><i><small>Latin American/Taiwanese Fusion</small></i></p>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="wrapper-cover">
                             <img src="assets/img/albums/songs_that_matter.jpg" alt="" class="img-responsive">
                             <div class="hover">
                                 <a class="buy" href="http://www.itunes.com">
@@ -198,22 +199,6 @@
                             </div>
                         </div>
                     </li>
-                    <li>
-                        <div class="wrapper-cover">
-                            <img src="assets/img/albums/prong_praison.jpg" alt="" class="img-responsive">
-                            <div class="hover">
-                                <a class="buy" href="http://www.itunes.com">
-                                    <i class="flaticon-apple"></i>
-                                    <span>Coming up!</span>
-                                </a>
-                                <a href="" class="info">
-                                    <h5>Prong Praison</h5>
-                                    <p>Coming up!</p>
-                                    <p><i><small>NeoJazz</small></i></p>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -221,155 +206,185 @@
     <div class="skew-arrow right"></div>
 </div>
 
-<!-- Portfolio -->
-<div id="portfolio" class="skew-pos portfolio">
+<!-- Biography -->
+<div id="biography" class="skew-pos biography">
     <div class="skew-arrow left"></div>
     <div class="container skew-neg">
         <div class="row">
             <div class="col-sm-12 category-title">
-                <h1>PORTFOLIO</h1>
+                <h1>BIOGRAPHY</h1>
                 <div class="under-line">
                     <span class="line"></span>
                 </div>
-                <!--<p>Our Passion leads to design, design leads to performance, performance lead</p>-->
             </div>
-            <!-- Portfolio elements -->
-            <div class="col-sm-12 portfolio-elem">
+            <div class="col-sm-12 col-md-5 col-lg-6 carousel">
+                <div id="slider-2" class="carousel slide simple-slider" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="assets/img/biography/trc_leah.jpg" alt="slide">
+                        </div>
+                        <div class="item">
+                            <img src="assets/img/biography/wgbh_radio.jpg" alt="slide">
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#slider-2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#slider-2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-7 col-lg-6 content">
+                <h4>Who is Gustavo?</h4>
+                <p>Having performed with world renowned artists such as Alejandro Sanz, Susana Baca, Joyce Moreno, and Rosa Pasos, Gustavo began his journey as a
+                    talented pianist at the age of 6 in Lima, Peru. At 11, he secured solo classical recitals around the town, beginning to make a name for
+                    himself among the urbanites. His talent got him noticed by the admissions committee of the National Conservatory of Music in Lima, where
+                    he auditioned and secured himself the only spot available for a pianist in the conservatory at the age of 17.
+                    There, he continued his classical training.
+                </p>
+                <p>
+                    At 19, he moved to the United States and had the fortune of finding a group of musicians who piqued his interest in jazz, R&B, and Brazilian music,
+                    and deepened his appreciation and knowledge of Latin music. It was with these musicians that he began training and performing in styles other
+                    than classical.
+                </p>
 
-                <ul>
-                    <li class="audio">
-                        <iframe id="sc-widget"
-                                src="https://w.soundcloud.com/player/?url=https://soundcloud.com/gustavo-del-pino/sets/portfolio&amp;sharing=false&amp;show_user=false&amp;show_playcount=false&amp;color=72e4ec&amp;theme_color=00000"
-                                width="100%" height="465" scrolling="no" frameborder="no"></iframe>
+                <p>
+                    After years of training and performing in a small town in middle America, he received a scholarship to attend the prestigious Berklee
+                    College of Music in Boston, MA. Here, he honed his jazz and Latin skills, and flexed his creative muscles in other styles.
+                    He has studied under Oscar Stagnaro, Alain Mallet, and Ray Santiago, among others. This led him to amazing opportunities to perform
+                    and record with many talented rising stars, as well as current household favorites.
+                </p>
+                <p>
+                    In the past 4 years, he has recorded 5 full albums and participated in numerous sessions, performing in a variety of styles. Check out some samples in his portfolio
+                </p>
+                <p><h4>My Gear</h4></p>
+                <ul class="list">
+                    <li>
+                        <i class="icon-check"></i>
+                        <span>Roland RD700GX stage piano</span>
+                    </li>
+                    <li>
+                        <i class="icon-check"></i>
+                        <span>Addictive Keys (VST)</span>
+                    </li>
+                    <li>
+                        <i class="icon-check"></i>
+                        <span>Logic Pro X and ProTools 10/11</span>
+                    </li>
+                    <li>
+                        <i class="icon-check"></i>
+                        <span>PreSonus AudioBox 22VSL Audio Interface</span>
+                    </li>
+                    <li>
+                        <i class="icon-check"></i>
+                        <span>Grandeur Piano from Kontakt (VST)</span>
                     </li>
 
-                    <li class="video">Youtube Link 1</li>
-                    <li class="video">Youtube Link 2</li>
-                    <li class="video">Youtube Link 3</li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div class="skew-arrow right"></div>
+</div>
 
-
-                <!--<ul>-->
-                    <!--<li>-->
-                        <!--<div class="wrapper-portfolio">-->
-                            <!--<iframe width="100%" height="120" scrolling="no" frameborder="no"-->
-                                    <!--src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/249486539&amp;auto_play=false&amp;hide_related=false&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false">-->
-                            <!--</iframe>-->
-                        <!--</div>-->
-
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<div class="wrapper-portfolio">-->
-                            <!--<img src="assets/img/blog/home-1.jpg" alt="" class="img-responsive">-->
-                            <!--<a class="hover" href="blog-single.html">-->
-                                <!--<span class="category">MUSIC</span>-->
-                                <!--<span class="line-h"></span>-->
-                                <!--<h3>New album coming soon on 5 november</h3>-->
-                                <!--<p>The post format will feature the first in the post.</p>-->
-                            <!--</a>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                    <!--<li>-->
+ Gallery
+<div id="gallery" class="gallery">
+    <div class="container">
+        <div class="col-sm-12 category-title">
+            <h1>PHOTOS GALLERY</h1>
+            <div class="under-line">
+                <span class="line"></span>
+            </div>
+            <p>Our Passion leads to design, design leads to performance, performance leads to success. We believe that apps and websites should not only be eyecatching but actually provide a great user experience that users will remember.</p>
+        </div>
+    </div>
+    <div id="masonry" class="masonry">
+        <div class="grid-sizer"></div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-1.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-1.jpg"><i class="icon-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-2.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-2.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item big">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-big.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-big.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-3.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-3.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-4.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-4.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-6.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-6.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-7.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-7.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-8.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-8.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-1.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-1.jpg"><i class="icon-popup"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item big">
+            <div class="wrapper-img">
+                <img src="assets/img/gallery/masonry-5.jpg" alt="Gallery Img" class="img-responsive">
+                <div class="hover">
+                    <a class="popup-link" href="assets/img/gallery/masonry-5.jpg"><i class="icon-popup"></i></a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-
-<!-- Gallery -->
-<!--<div id="gallery" class="gallery">-->
-    <!--<div class="container">-->
-        <!--<div class="col-sm-12 category-title">-->
-            <!--<h1>PHOTOS GALLERY</h1>-->
-            <!--<div class="under-line">-->
-                <!--<span class="line"></span>-->
-            <!--</div>-->
-            <!--<p>Our Passion leads to design, design leads to performance, performance leads to success. We believe that apps and websites should not only be eyecatching but actually provide a great user experience that users will remember.</p>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div id="masonry" class="masonry">-->
-        <!--<div class="grid-sizer"></div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-1.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-1.jpg"><i class="icon-plus"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-2.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-2.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item big">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-big.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-big.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-3.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-3.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-4.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-4.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-6.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-6.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-7.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-7.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-8.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-8.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-1.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-1.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-        <!--<div class="item big">-->
-            <!--<div class="wrapper-img">-->
-                <!--<img src="assets/img/gallery/masonry-5.jpg" alt="Gallery Img" class="img-responsive">-->
-                <!--<div class="hover">-->
-                    <!--<a class="popup-link" href="assets/img/gallery/masonry-5.jpg"><i class="icon-popup"></i></a>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
 
 <!-- Contact -->
 <div id="contact" class="container contact">
@@ -439,27 +454,18 @@
 </div>
 
 <!-- ======== JavaScript ======== -->
-<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.stellar.js"></script>
-<script type="text/javascript" src="assets/js/masonry.min.js"></script>
-<script type="text/javascript" src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
 
-<!-- SoundCloud Player -->
-<script type="text/javascript" src="assets/js/soundcloud.player.api.js"></script>
+
+<script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+<script type="text/javascript" src="assets/js/masonry.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="assets/js/js_files.js"></script>
 
 <!-- jPlayer -->
-<script type="text/javascript" src="assets/jplayer/jquery.jplayer.min.js"></script>
-<script type="text/javascript" src="assets/jplayer/jplayer.playlist.min.js"></script>
-<script type="text/javascript" src="assets/js/jplayer.home.js"></script>
-<!-- Custom JavaScript -->
-<script type="text/javascript" src="assets/js/js.js"></script>
+<!--<script type="text/javascript" src="assets/jplayer/jquery.jplayer.min.js"></script>-->
+<!--<script type="text/javascript" src="assets/jplayer/jplayer.playlist.min.js"></script>-->
 
-<!-- ======== style switcher ======== -->
-<script type="text/javascript" src="assets/js/jquery.cookie.js"></script>
-<script type="text/javascript" src="assets/js/switcher.js"></script>
 </body>
 </html>
