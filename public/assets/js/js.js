@@ -45,13 +45,13 @@ jQuery(document).ready(function($) {
 
 
     // Masonry
-    // var $masonryC = $('#masonry');
-    // $masonryC.imagesLoaded( function(){
-    //     $masonryC.masonry({
-    //         columnWidth: '.grid-sizer',
-    //         itemSelector : '.item'
-    //     });
-    // });
+    var $masonryC = $('#masonry');
+    $masonryC.imagesLoaded( function(){
+        $masonryC.masonry({
+            columnWidth: '.grid-sizer',
+            itemSelector : '.item'
+        });
+    });
 
     // Gallery LightBox
     $('.popup-link').magnificPopup({

@@ -36,6 +36,7 @@ module.exports = {
         new CopyWebpackPlugin([
             {from: __dirname + '/public/assets/img/albums', to: __dirname + '/build/assets/img/albums'},
             {from: __dirname + '/public/assets/img/biography', to: __dirname + '/build/assets/img/biography'},
+            {from: __dirname + '/public/assets/img/gallery', to: __dirname + '/build/assets/img/gallery'},
 
 
             {from: __dirname + '/public/assets/js/jquery-1.11.1.min.js', to: __dirname + '/build/assets/js/jquery-1.11.1.min.js'},
