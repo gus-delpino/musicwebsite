@@ -1,0 +1,183 @@
+@import "variables.less";
+
+/*--------------------------------------------------------------
+2.0 - Navigation
+--------------------------------------------------------------*/
+nav.navbar {
+  z-index: 999999;
+  border-top: 3px solid @line_color;
+  margin-bottom: 0;
+
+  .navbar-header {
+
+    button.navbar-toggle {
+
+      background: none;
+      border-color: #fff;
+      padding: 5px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+
+      .icon-bar {
+        background: #fff;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+    }
+
+    button.navbar-toggle:hover {
+      background: none;
+      border-color: @line_color;
+
+      .icon-bar {
+        background: @line_color;
+      }
+    }
+
+    a.navbar-brand {
+      font-family: @brand_font;
+      font-weight: 400;
+      font-size: @brand_size;
+      line-height: 72px;
+      color: #fff;
+      margin: 0;
+      padding: 0 15px 0 0;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+
+      span.colored {
+        color: @line_color;
+      }
+
+    }
+
+    a.navbar-brand:hover {
+      color: @line_color;
+    }
+  }
+
+  ul.navbar-nav {
+
+    li {
+      padding: 20px 5px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+
+      a {
+        display: block;
+        margin: 0;
+        padding: 8px 15px;
+        border: 1px solid rgba(236, 170, 47, 0);
+        font-family: @nav_font;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        color: @white;
+        text-transform: uppercase;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+      }
+
+      a:hover, a:active, a:focus {
+        color: @line_color;
+      }
+    }
+
+    li:last-child {
+      padding-right: 0;
+    }
+
+    li.active {
+
+      a {
+        background: none;
+        color: @line_color;
+        border: 1px solid @line_color;
+        border-radius: 1px;
+      }
+
+      a:hover, a:focus, a:active {
+        background: none;
+        color: @line_color;
+      }
+
+    }
+
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  nav.navbar {
+    min-height: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav.navbar .navbar-header button.navbar-toggle {
+    margin: 13px 15px 13px 0;
+  }
+  nav.navbar .navbar-header a.navbar-brand {
+    font-size: 24px;
+    line-height: 50px;
+    height: 50px;
+    padding: 0 15px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+  nav.navbar ul.navbar-nav li {
+    padding: 20px 0;
+  }
+  nav.navbar ul.navbar-nav li a {
+    padding: 8px 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  nav.navbar {
+    background: none;
+    border-bottom-color: rgba(0, 0, 0, 0.8);
+  }
+  nav.navbar .navbar-header {
+    background: rgba(16, 16, 16, 0.8);
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  }
+  nav.navbar ul.navbar-nav {
+    padding: 0;
+    margin: 0 -15px;
+  }
+  nav.navbar ul.navbar-nav li {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(16, 16, 16, 0.9);
+  }
+  nav.navbar ul.navbar-nav li a {
+    background: none;
+  }
+  nav.navbar ul.navbar-nav li:last-child {
+    border-bottom: none;
+  }
+  nav.navbar ul.navbar-nav li:hover {
+    background: rgba(13, 13, 13, 0.4);
+  }
+  nav.navbar ul.navbar-nav li.active a {
+    border-color: rgba(236, 170, 47, 0);
+  }
+}

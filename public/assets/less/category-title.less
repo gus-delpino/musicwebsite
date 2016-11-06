@@ -1,0 +1,50 @@
+.category-title {
+
+  h1 {
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 35px;
+  }
+
+  .under-line {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 1px;
+    margin: 20px auto 0;
+    background: #262626;
+
+    .line {
+      display: block;
+      position: relative;
+      width: 30px;
+      height: 1px;
+      left: 50%;
+      margin-left: -15px;
+      background: @line_color;
+    }
+
+  }
+
+}
+
+.category-title:hover .under-line .line {
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .category-title p {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

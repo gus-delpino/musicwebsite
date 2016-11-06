@@ -49,7 +49,8 @@ jQuery(document).ready(function($) {
     $masonryC.imagesLoaded( function(){
         $masonryC.masonry({
             columnWidth: '.grid-sizer',
-            itemSelector : '.item'
+            itemSelector : '.item',
+            isFitWidth: true
         });
     });
 

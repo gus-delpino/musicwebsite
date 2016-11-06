@@ -1,0 +1,174 @@
+/*--------------------------------------------------------------
+5.0 - Discography
+--------------------------------------------------------------*/
+.discography {
+  background: url(../img/elements/discography_bg1.jpg) center center no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  padding-top: 120px;
+  padding-bottom: 380px;
+
+  .covers {
+    position: relative;
+    z-index: 3;
+    padding: 0 12px;
+    margin-bottom: -150px;
+
+    ul {
+      list-style: none;
+      list-style-type: none;
+      margin: 60px 0 0 0;
+      padding: 0;
+
+      li {
+        display: block;
+        float: left;
+        width: 25%;
+        padding: 3px;
+
+        .wrapper-cover {
+          position: relative;
+          overflow: hidden;
+
+          .hover {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+            .buy {
+              text-decoration: none;
+              display: block;
+              position: relative;
+              float: right;
+              height: 40px;
+              width: 40px;
+              top: 0;
+              background: @discography_buy_bg;
+              white-space: nowrap;
+              overflow: hidden;
+              z-index: 30;
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+              transition: all 0.2s linear;
+
+              i {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 40px;
+                height: 40px;
+                background: @line_color;
+                text-align: center;
+                font-size: 20px;
+                line-height: 40px;
+                color: #fff;
+                cursor: default;
+                z-index: 32;
+              }
+
+              span {
+                position: relative;
+                display: block;
+                float: left;
+                height: 40px;
+                width: 100%;
+                font-family: @content_font;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 40px;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                white-space: nowrap;
+                padding-left: 45px;
+                z-index: 31;
+              }
+
+            }
+
+            .buy:hover {
+              width: 155px;
+            }
+
+            .info {
+              text-decoration: none;
+              display: block;
+              position: absolute;
+              bottom: 10%;
+              padding: 10px 25% 10px 10px;
+              background: rgba(20, 20, 20, 0.8);
+              -webkit-transition: all 0.2s linear;
+              -moz-transition: all 0.2s linear;
+              -ms-transition: all 0.2s linear;
+              -o-transition: all 0.2s linear;
+              transition: all 0.2s linear;
+
+              h5 {
+                font-family: @content_font;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                color: #fff;
+                margin: 0;
+                text-transform: uppercase;
+              }
+
+              p {
+                font-family: @content_font;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 14px;
+                color: #fff;
+                margin: 0;
+                text-transform: uppercase;
+              }
+
+              h5, p {
+                -webkit-transition: all 0.2s linear;
+                -moz-transition: all 0.2s linear;
+                -ms-transition: all 0.2s linear;
+                -o-transition: all 0.2s linear;
+                transition: all 0.2s linear;
+              }
+
+            }
+
+            .info:hover {
+              background: rgba(236, 170, 47, 0.9);
+              padding-left: 20px;
+
+              h5, p {
+                color: #141414;
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .discography .covers ul li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .discography .covers ul li {
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding: 3px 0;
+  }
+}

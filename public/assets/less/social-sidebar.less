@@ -1,0 +1,93 @@
+/*--------------------------------------------------------------
+13.0 - Social Media Sidebar
+--------------------------------------------------------------*/
+#social-sidebar {
+  position: fixed;
+  z-index: 999995;
+  width: 120px;
+  height: auto;
+  top: 50%;
+  margin-top: -60px;
+  left: -115px;
+  overflow: visible;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+
+  a.sbar {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    width: 120px;
+    height: 30px;
+    margin-bottom: 3px;
+    background: #292929;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 2px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-family: @content_font;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 30px;
+    color: #fff;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -ms-transition: all 0.2s linear;
+    -o-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+
+    i {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.3);
+      margin-left: 10px;
+      -webkit-transition: all 0.2s linear;
+      -moz-transition: all 0.2s linear;
+      -ms-transition: all 0.2s linear;
+      -o-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+
+  }
+
+  a.sbar.facebook {
+    background: #4460ae;
+  }
+
+  a.sbar.twitter {
+    background: #058cb9;
+  }
+
+  a.sbar.instagram {
+    background: #6d564b;
+  }
+
+  a.sbar:hover {
+    left: 90px;
+  }
+
+}
+
+#social-sidebar.scrolled {
+  left: -90px;
+}
+
+#social-sidebar:hover {
+  left: -90px;
+}
+
+@media screen and (max-width: 767px) {
+  #social-sidebar {
+    display: none !important;
+  }
+}
