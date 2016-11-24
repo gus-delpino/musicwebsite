@@ -1,9 +1,10 @@
+var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
-        js_files : __dirname + '/public/build_entry.js'
+        js : __dirname + '/public/build_entry.js'
     },
     output: {
         path: __dirname + '/build/assets/js',
@@ -31,6 +32,11 @@ module.exports = {
 
         ]
     },
+    resolve: {
+        alias: {
+            jquery: __dirname + '/public/assets/js/lib/jquery-1.12.4'
+        }
+    },
     plugins: [
         new ExtractTextPlugin("../css/style.css"),
         new CopyWebpackPlugin([
@@ -38,16 +44,20 @@ module.exports = {
             {from: __dirname + '/public/assets/img/biography', to: __dirname + '/build/assets/img/biography'},
             {from: __dirname + '/public/assets/img/gallery', to: __dirname + '/build/assets/img/gallery'},
 
-
-            {from: __dirname + '/public/assets/js/jquery-1.11.1.min.js', to: __dirname + '/build/assets/js/jquery-1.11.1.min.js'},
-            {from: __dirname + '/public/assets/js/bootstrap.min.js', to: __dirname + '/build/assets/js/bootstrap.min.js'},
-            {from: __dirname + '/public/assets/js/masonry.min.js', to: __dirname + '/build/assets/js/masonry.min.js'},
-            {from: __dirname + '/public/assets/js/jquery.validate.min.js', to: __dirname + '/build/assets/js/jquery.validate.min.js'},
-            {from: __dirname + '/public/assets/js/smooth-scroll.js', to: __dirname + '/build/assets/js/smooth-scroll.js'},
+            //
+            // {from: __dirname + '/public/assets/js/jquery-1.11.1.min.js', to: __dirname + '/build/assets/js/jquery-1.11.1.min.js'},
+            // {from: __dirname + '/public/assets/js/bootstrap.min.js', to: __dirname + '/build/assets/js/bootstrap.min.js'},
+            // {from: __dirname + '/public/assets/js/masonry.min.js', to: __dirname + '/build/assets/js/masonry.min.js'},
+            // {from: __dirname + '/public/assets/js/jquery.validate.min.js', to: __dirname + '/build/assets/js/jquery.validate.min.js'},
+            // {from: __dirname + '/public/assets/js/smooth-scroll.js', to: __dirname + '/build/assets/js/smooth-scroll.js'},
 
 
 
             {from: __dirname + '/public/index.html', to: __dirname + '/build/index.html'}
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+        })
     ]
 };

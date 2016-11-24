@@ -17,14 +17,18 @@
     "grunt-contrib-less": "~1.4.0",
     "grunt-contrib-uglify": "~0.5.0",
     "grunt-contrib-watch": "~1.0.0",
+    "jquery-bridget": "^2.0.1",
     "less": "2.7.1",
     "less-loader": "2.2.3",
+    "masonry-layout": "^4.1.1",
     "style-loader": "^0.13.1",
+    "uglify-js": "^2.7.4",
     "webpack": "1.13.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "node_modules/.bin/webpack --config webpack.config.js"
+    "build": "node_modules/.bin/webpack --config webpack.config.js",
+    "uglify": "node_modules/.bin/uglifyjs ./build/assets/js/js.js -c -m -o ./build/assets/js/js.js"
   },
   "author": "Gustavo del Pino",
   "license": "ISC"
