@@ -144,12 +144,45 @@ nav.darkbg {
     padding: 0 15px;
   }
 }
-@media screen and (max-width: 1199px) and (min-width: 768px) {
-  nav.navbar ul.navbar-nav li {
-    padding: 20px 0;
+@media screen and (min-width: 1200px) {
+  nav.navbar {
+    .container {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 0;
+
+      ul.navbar-nav {
+        margin-right: 50px;
+        li {
+          padding: 20px 10px;
+
+          a {
+            padding: 8px 5px;
+          }
+        }
+      }
+    }
   }
-  nav.navbar ul.navbar-nav li a {
-    padding: 8px 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  nav.navbar {
+    .container {
+      width: 100%;
+      padding-left: 50px;
+      padding-right: 0;
+
+      ul.navbar-nav {
+        margin-right: 50px;
+        li {
+          padding: 20px 0;
+
+          a {
+            padding: 8px 5px;
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 767px) {
