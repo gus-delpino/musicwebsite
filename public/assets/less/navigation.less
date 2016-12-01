@@ -7,6 +7,8 @@ nav.navbar {
   z-index: 999999;
   border-top: 3px solid @line_color;
   margin-bottom: 0;
+  background: none;
+  border-bottom: none;
 
   .navbar-header {
 
@@ -107,7 +109,7 @@ nav.navbar {
       a {
         background: none;
         color: @line_color;
-        border: 1px solid @line_color;
+        border-bottom: 1px solid @line_color;
         border-radius: 1px;
       }
 
@@ -120,6 +122,10 @@ nav.navbar {
 
   }
 
+}
+
+nav.darkbg {
+  background-color: #010101;
 }
 
 @media screen and (max-width: 767px) {
@@ -149,7 +155,7 @@ nav.navbar {
 @media screen and (max-width: 767px) {
   nav.navbar {
     background: none;
-    border-bottom-color: rgba(0, 0, 0, 0.8);
+    //border-bottom-color: rgba(0, 0, 0, 0.8);
   }
   nav.navbar .navbar-header {
     background: rgba(16, 16, 16, 0.8);

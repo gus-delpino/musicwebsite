@@ -8,6 +8,9 @@ $(window).on("load", function() {
 jQuery(document).ready(function($) {
     "use strict";
 
+    // var clientHeight = $( window ).height();
+    // $('.home-container').css('min-height', clientHeight - 100);
+
     // ScrollTo annimation
     $('.scrollTo').on('click',function (e) {
         e.preventDefault();
@@ -81,11 +84,21 @@ jQuery(document).ready(function($) {
 
     // Open Close Social Media on scroll
     $(window).on("scroll", function () {
+        var dark_scroll = 520;
         if ($(this).scrollTop() > 100) {
             $("#social-sidebar").addClass("scrolled");
+
+            if( $(this).scrollTop() > dark_scroll ){
+                $(".navbar").addClass("darkbg");
+            }
         }
         else {
             $("#social-sidebar").removeClass("scrolled");
+
+            if( $(this).scrollTop() < dark_scroll) {
+                $(".navbar").removeClass("darkbg");
+            }
+
         }
     });
 
