@@ -428,13 +428,13 @@
         </div>
         <div class="col-sm-12 contact-form">
             <div class="row">
-                <form action="contact.php" method="post" name="contact" id="contact-form">
+                <form action="" name="contact" id="contact-form">
                     <div class="col-sm-4">
                         <input name="name" type="text" class="required" id="name" title="Please type your name." placeholder="Your name">
                     </div>
 
                     <div class="col-sm-4">
-                        <input name="email" type="text" id="email" placeholder="Your e-mail">
+                        <input name="email" type="text" class="required" id="email" placeholder="Your e-mail">
                     </div>
 
                     <div class="col-sm-4">
@@ -442,9 +442,10 @@
                     </div>
 
                     <div class="col-sm-12">
-                        <textarea name="message" cols="15" rows="8" class="required" id="comments" placeholder="Type a message." title="Please type a message."></textarea>
+                        <textarea name="message" cols="15" rows="8" class="required" id="message" placeholder="Type a message." title="Please type a message."></textarea>
                     </div>
                     <div class="col-sm-12">
+                        <div class="col-sm-12 message-sent" id="message-sent">Thank you for contacting Gustavo. He will reach back out to you ASAP!</div>
                         <input type="submit" name="submit" id="submit" value="SEND MESSAGE">
                     </div>
                 </form>

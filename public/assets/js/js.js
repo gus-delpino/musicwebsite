@@ -8,9 +8,6 @@ $(window).on("load", function() {
 jQuery(document).ready(function($) {
     "use strict";
 
-    // var clientHeight = $( window ).height();
-    // $('.home-container').css('min-height', clientHeight - 100);
-
     // ScrollTo annimation
     $('.scrollTo').on('click',function (e) {
         e.preventDefault();
@@ -30,12 +27,24 @@ jQuery(document).ready(function($) {
         return false;
     }); // End Click
 
+    var mailerEndp = 'http://54.210.116.70:18443';
+    //mailerEndp = 'http://localhost:8080';
+
     // Form Validation
     $('#contact-form').validate({
         rules: {
             email: {
                 required: true,
                 email: true
+            },
+            name: {
+                required: true
+            },
+            subject: {
+                required: true
+            },
+            messages: {
+                required: true
             }
         }, //end rules
         messages: {
@@ -43,6 +52,27 @@ jQuery(document).ready(function($) {
                 required: "Please type a e-mail address.",
                 email: "This is not a valid email address."
             }
+        },
+        submitHandler: function(form) {
+            var name = $("#name").val(),
+                email = $("#email").val(),
+                subject = $("#subject").val(),
+                message = $("#message").val();
+
+            var dataFields = { name: name,
+                               email: email,
+                               subject: subject,
+                               message: message,
+                               site: 'gustavodelpino'};
+            //Hide 'Send Message' button
+            $("#submit").prop('disabled', true);
+
+            $.post( mailerEndp + '/mailer/sendGpmContactMe', dataFields )
+                .done( function(response) {
+                    //Show 'Send Message' button
+                    $("#submit").prop('disabled', false);
+                    $("#message-sent").show();
+                });
         }
     }); // end validate
 
